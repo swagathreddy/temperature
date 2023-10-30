@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background: black; 
+}
+.container{
+    max-width: 500px;
+    background: #FFBF00;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 15px #29B2A0;
+    font-family: sans-serif;
+    padding:30px;
+    margin:20px;
+}
+.light-mode{
+background: white;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+
+}
+.temp-icon{
+  font-size: 40px;
+}
+h1{
+    font-size: 35px;
+}
+.celsius,.fahrenheit,.kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+input{
+    -moz-appearance: textfield;
+}
+input{
+    flex:0;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px 0px 0px 8px;
+    padding:0px 10px ;
+}
+.icon{
+    flex:0.4;
+    background:#4d5964;
+    height: 50px;
+    font-size:25px ;
+    list-style: none;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 0px 8px 8px 0px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.button button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button button:hover{
+    background:#000;
+    color: white;
+
+}
+
+#change{
+    font-size: 20px;
+    background: black;
+    color: white;
+   margin-left: 250px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (min-width: 320px){
+    .icon{
+        flex:0.9;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
